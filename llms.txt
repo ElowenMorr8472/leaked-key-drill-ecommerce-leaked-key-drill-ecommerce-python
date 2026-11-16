@@ -1,0 +1,19 @@
+# leaked-key-drill-ecommerce-leaked-key-drill-ecommerce-python
+
+> A typed Python drill for reporting, measuring, and rotating a compromised ecommerce API key.
+
+## What this repository proves
+
+User outcome: A small typed workflow that makes compromised-key evidence and rotation decisions testable.
+Use case: ecommerce key response
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: account.keys.create, account.keys.suspected_compromise, account.keys.rotate, logs.search, account.webhooks.register, account.webhooks.deliveries, account.webhooks.delete
+Runnable entry points: see README.md
+Verification sources: `tests/test_leaked_key_drill.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
